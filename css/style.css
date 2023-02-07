@@ -34,7 +34,7 @@ img{
     /*  Wrappers heights */
     --height-HM: 220px;
     --height-M: 500px;
-    --height-M2: 1000px;
+    --height-M2: 600px;
     --height-F: 280px;
     --height-f1:50px;
 
@@ -149,6 +149,14 @@ h2{
     margin-bottom: 4rem;
 }
 
+main ,
+.last-row-text 
+p {
+    font-size: 1rem;
+    line-height: 2em;
+ 
+}
+
 /* Header section -------------------------------------------------------------*/
 
 header{
@@ -246,7 +254,6 @@ section.main-header{
     font-weight: 700;
     margin-bottom: 5vh;
     font-size: 7vmin;
-    min-width: 100%;
     line-height:4rem;
 }
 .jumbo-text p{
@@ -269,28 +276,26 @@ section.main-header{
 .box2{
     text-align: center;
     width: 100%;
-    
-    
+
 }
 
-main p{
-    font-size: 1rem;
-    line-height: 2em;
- 
-}
+
 .box3{
     width: 55%;
     padding-top: 1.5rem;
+
 }
 
 /* second section with bigger row */
+.last-row-text{
+    text-align: center;
+   
+}
 
 .box4{
-    width: 100%;
-    background-color: var(--Mgreen);
-    /* debug */
-    border: var(--border);
+    margin-bottom: 1rem;
 }
+
 
 /* wawes */
 .wawe{
@@ -336,7 +341,21 @@ footer hr{
 
 
 
-/* CSS Responsive-------------------------------------------------------------------- */
+/*CSS-Responsive-------------------------------------------------------------------- */
+
+@media (min-width: 1500px) and (max-width: 3000px){
+    .jumbo-text h1{
+        font-size: 4vmax;
+    }
+
+   
+}
+@media (min-width: 1500px) and (max-width: 1900px){
+    section.main-header{
+        min-height: 40vh;
+    }
+}
+
 @media only screen and (max-width: 1500px){
     :root{
         --width-W:85%;
@@ -346,6 +365,14 @@ footer hr{
         background-size: cover;
     }
 
+     /* readability of paragraph */
+    
+    .jumbo-text p{
+        text-shadow: 0px 0px 6px  black;      
+        background-image: linear-gradient(360deg, rgba(0,0,0,0.1),rgba(0,0,0,0.0));
+        border-radius: 25px;
+        padding: 1vh;
+    }
 
 }
 @media only screen and (max-width: 980px){
@@ -355,8 +382,11 @@ footer hr{
         font-size: 12px;
     
     }
-    
 
+    .wrapper-main {
+        align-items: center;
+    }
+    
 }
 
 @media only screen and (max-width: 800px){
@@ -369,7 +399,9 @@ footer hr{
         margin-bottom: 1rem;
     }
 
-    .box3 p{
+    .box3,
+    .last-row-text
+    p{
         font-size: 0.8rem;
     }
 }
@@ -379,14 +411,7 @@ footer hr{
     section.main-header{
         background-size: cover;
     }
-     /* readability of paragraph */
     
-    .jumbo-text p{
-        text-shadow: 0px 0px 6px  black;      
-        background-image: linear-gradient(360deg, rgba(0,0,0,0.1),rgba(0,0,0,0.0));
-        border-radius: 25px;
-        padding: 1vh;
-    }
 
    
 
