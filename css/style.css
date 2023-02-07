@@ -38,7 +38,7 @@ img{
     --height-f1:50px;
 
     /*wrapper widht*/
-    --width-W:80%;
+    --width-W:60%;
 
 }
 
@@ -156,27 +156,24 @@ section.main-header{
 }
 
 .navbar{
-    height: 20px;
+    height: 80px;
     display: flex;
     align-items: center;
+    border: var(--border);
     
 }
 
 .logo{
-    line-height: 20px;
     padding-left: 0.2rem;
     width: 20%;
     
 }
 
-.logo img{
-    max-height: 20px;
-}
 
 .navbar li{
     display: inline-block;
-    margin-right: 5px;
-    font-size: 10px;
+    margin-right: 3px;
+    font-size: 18px;
 
 }
 
@@ -221,11 +218,13 @@ section.main-header{
 .jumbo-text h1{
     font-weight: 700;
     margin-bottom: 5vh;
-    font-size: 7vmin;
+    font-size: 5vh;
+    min-width: 100%;
+    line-height:3rem ;
 }
 .jumbo-text p{
     display: inline-block;
-    font-size: 2vh;
+    font-size: 18px;
     line-height: 2vh;
     max-width: 700px;
     align-self: center;
