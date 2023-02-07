@@ -224,14 +224,13 @@ section.main-header{
     font-size: 7vmin;
 }
 .jumbo-text p{
-    padding:0 15vmax;
+    display: inline-block;
     font-size: 2vh;
+    line-height: 2vh;
+    max-width: 700px;
+    align-self: center;
 }
-header hr{
-    border: none;
-    height: 2px;
-    background-color:var(--Hazure)
-}
+
 
 /* MAIN styling ------------------------------------------------------------------------- */
 
@@ -289,16 +288,22 @@ footer hr{
     cursor: pointer;
 }
  
-
-
-
-
-
-/* scusate ma se non è responsive almeno il testo sul jumbotron mi si gonfia la vena */
-@media only screen and (max-width: 768px) {
-    .jumbo-text p{
-        font-size: 3vmin;
-        padding:0 6vh;
+@media only screen and (max-width: 700px){
+    
+    section.main-header{
+        background-size: cover;
     }
+     /* readability of paragraph */
+    
+    .jumbo-text p{
+        text-shadow: 0px 0px 6px  black;
+        line-height: 3vh;
+        background-image: linear-gradient(360deg, rgba(0,0,0,0.1),rgba(0,0,0,0.0));
+        border-radius: 25px;
+        padding: 1vh;
+    }
+
 }
+
+
 
