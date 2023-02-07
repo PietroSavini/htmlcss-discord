@@ -37,15 +37,19 @@ img{
     --height-F: 280px;
     --height-f1:50px;
 
+    /*wrapper widht*/
+    --width-W:80%;
+
 }
 
 body{
     font-size: 10px;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 section{
     display: flex;
     justify-content: center;
-    /* debug */
+    align-items: center;
    
 }
 .main-section1{
@@ -56,22 +60,22 @@ section{
     background-color: var(--FGrey);
 }
 
-.wrapper{
-    width: 60%;
+.header-wrapper{
+    width: var(--width-W);
     margin: 0 auto;
+   
 }
 
 .wrapper-header-main{
     height: var(--height-HM);
-    width: 60%;
+    width: var(--width-W);
     padding: 1.5rem 0 ;
-    /* debug */
    
 }
 .wrapper-main{
     display: flex;
     height: var(--height-M);
-    width: 60%;
+    width: var(--width-W);
     margin: 1rem auto;
     
 }
@@ -79,7 +83,7 @@ section{
     display: flex;
     flex-direction: row-reverse;
     height: var(--height-M);
-    width: 60%;
+    width: var(--width-W);
     margin: 1rem auto;
    
 }
@@ -87,14 +91,14 @@ section{
 .wrapper-main2{
     display: flex;
     height: var(--height-M2);
-    width: 60%;
+    width: var(--width-W);
     margin: 1rem auto;
 }
 
 .wrapper-footer{
     display: flex;
     height: var(--height-F);
-    width: 60%;
+    width: var(--width-W);
     margin: 0.3rem 0 1rem 0;
 }
 
@@ -103,7 +107,7 @@ section{
     justify-content: space-between;
     align-items: center;
     height: var(--height-f1);
-    width: 60%;
+    width: var(--width-W);
     margin: 1rem 0 0 0;
     background-color: var(--Faqua);
 }
@@ -117,6 +121,8 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
 }
 
 header button{
@@ -128,13 +134,24 @@ header button{
 }
 /* Header section -------------------------------------------------------------*/
 
+header{
+    color: #FFFFFE;
+    background-color:#255EE9 ;
+   
+}
+
+section.main-header{
+    background-image: url(../img/jumbo.png);
+    background-size: 100% 100%;
+    height: 60vh;
+
+}
+
 .header-nav{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 50px;
-    /* debug */
-    background-color: var(--Hazure);
+    height: 40px;
     
 }
 
@@ -142,9 +159,6 @@ header button{
     height: 20px;
     display: flex;
     align-items: center;
-    /* debug */
-    background-color: var(--Horange);
-    border: var(--border);
     
 }
 
@@ -152,51 +166,67 @@ header button{
     line-height: 20px;
     padding-left: 0.2rem;
     width: 20%;
-    /* debug */
-    border-right: var(--border);
     
+}
+
+.logo img{
+    max-height: 20px;
 }
 
 .navbar li{
     display: inline-block;
     margin-right: 5px;
+    font-size: 10px;
 
 }
 
 .navbar .links{
-    line-height: 20px;
+    
     text-align: center;
     width: 60%;
-    /* debug */
-    border-right: var(--border);
-    border-left: var(--border);
+
 }
 .login{
     line-height: 20px;
     width: 20%;
     text-align: right;
     padding-right: 0.3rem;
-    /* debug */
-    border-left: var(--border);
     
+}
+.white-btn{
+    color:black;
+    background-color: #fff;
+
 }
 
 /* /HeaderNavbar Styling------------------------------------------------------------- */
 
 /* Main-Header Styling -------------------------------------------------------------- */
-.main-header{
-    background-color: var(--Hblue);
-}
+
 
 .box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    /* debug */
-    background-color: var(--Hpink);
-    border: var(--border);
-}
 
+}
+.jumbo-text{
+    text-align: center;
+    margin-bottom: 3vh;
+    line-height: 3vh;
+    
+}
+.jumbo-text h1{
+    font-weight: 700;
+    margin-bottom: 5vh;
+    font-size: 7vmin;
+}
+.jumbo-text p{
+    padding:0 15vmax;
+    font-size: 2vh;
+}
 header hr{
     border: none;
     height: 2px;
@@ -258,3 +288,17 @@ footer hr{
     min-width: 60px;
     cursor: pointer;
 }
+ 
+
+
+
+
+
+/* scusate ma se non è responsive almeno il testo sul jumbotron mi si gonfia la vena */
+@media only screen and (max-width: 768px) {
+    .jumbo-text p{
+        font-size: 3vmin;
+        padding:0 6vh;
+    }
+}
+
