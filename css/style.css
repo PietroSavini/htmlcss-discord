@@ -43,7 +43,7 @@ img{
 }
 
 body{
-    font-size: 10px;
+    
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 section{
@@ -112,7 +112,11 @@ section{
     background-color: var(--Faqua);
 }
 
-
+.btn-hover:hover{
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.215);
+    transition: 500ms;
+    
+}
 
 ul{
     list-style-type: none;
@@ -121,10 +125,14 @@ ul{
 a{
     text-decoration: none;
     color: inherit;
-    padding: 0.3rem 0.5rem;
-    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
 }
-
+a:hover{
+    color:#5865f2;
+    transition:500ms;
+   
+}
 header button{
     background-color: inherit;
     text-decoration: none;
@@ -159,9 +167,10 @@ section.main-header{
     height: 80px;
     display: flex;
     align-items: center;
-    border: var(--border);
+    padding-top: 1.5rem;
+   
     
-}
+}   
 
 .logo{
     padding-left: 0.2rem;
@@ -175,6 +184,10 @@ section.main-header{
     margin-right: 3px;
     font-size: 18px;
 
+}
+
+.navbar li a:hover{
+    color: #23272A;
 }
 
 .navbar .links{
@@ -193,6 +206,11 @@ section.main-header{
 .white-btn{
     color:black;
     background-color: #fff;
+}
+
+.black-btn{
+    color:#fff;
+    background-color: #23272A;
 
 }
 
@@ -211,7 +229,7 @@ section.main-header{
 }
 .jumbo-text{
     text-align: center;
-    margin-bottom: 3vh;
+    margin-bottom: 2rem;
     line-height: 3vh;
     
 }
@@ -229,6 +247,11 @@ section.main-header{
     max-width: 700px;
     align-self: center;
 }
+
+.jumbo-btn a{
+    margin: 1rem;
+}
+
 
 
 /* MAIN styling ------------------------------------------------------------------------- */
@@ -286,12 +309,29 @@ footer hr{
     min-width: 60px;
     cursor: pointer;
 }
+
+
+
+
+
+/* CSS Responsive-------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px){
     :root{
         --width-W:85%;
     }
 
 }
+@media only screen and (max-width: 980px){
+    .navbar li{
+        display: inline-block;
+        margin-right: 1px;
+        font-size: 12px;
+    
+    }
+    
+
+}
+
 @media only screen and (max-width: 700px){
     
     section.main-header{
@@ -305,6 +345,8 @@ footer hr{
         border-radius: 25px;
         padding: 1vh;
     }
+
+   
 
 }
 
