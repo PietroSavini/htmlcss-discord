@@ -8,21 +8,14 @@
 img{
     max-width: 100%;
     max-height: 100%;
+
 }
 
 /* COMMON ------------------------------------------------------------------- */
 
 :root{
     --border: 1px dashed black;
-    /* header colors */
-    --Hpink:#EE82EE;
-    --Hblue:#00008B;
-    --Horange:#DAA520;
-    --Hazure:#ADD8E6;
-    /* main colors*/
-    --Mpink: #FFC0CB;
-    --Mblue:#1E90FF;
-    --Mgreen:#228B22;
+    /* colors */
     --Mgrey:#D3D3D3;
     /* footer colors */
     --Fpink:#FFB6C1;
@@ -35,7 +28,7 @@ img{
     --height-HM: 220px;
     --height-M: 500px;
     --height-M2: 600px;
-    --height-F: 280px;
+    --height-F: 400px;
     --height-f1:50px;
 
     /*wrapper widht*/
@@ -44,23 +37,28 @@ img{
 }
 
 body{
-    
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    background-color: #fff;
 }
+
+ul{
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
 section{
     display: flex;
     justify-content: center;
     align-items: center;
    
 }
-.main-section1{
-    background-color: var(--Mgrey);
-}
-
-.footer-section{
-    background-color: var(--FGrey);
-}
-
+/* Wrappers layouts------------------------------------------------------------ */
 .header-wrapper{
     width: var(--width-W);
     margin: 0 auto;
@@ -72,29 +70,6 @@ section{
     width: var(--width-W);
     padding: 1.5rem 0 ;
    
-}
-.wrapper-main{
-    display: flex;
-    align-items: flex-start;
-    height: var(--height-M);
-    width: var(--width-W);
-    margin: 1rem auto;
-    
-}
-.wrapper-main1{
-    display: flex;
-    flex-direction: row-reverse;
-    height: var(--height-M);
-    width: var(--width-W);
-    margin: 1rem auto;
-   
-}
-
-.wrapper-main2{
-    display: flex;
-    height: var(--height-M2);
-    width: var(--width-W);
-    margin: 1rem auto;
 }
 
 .wrapper-footer{
@@ -110,43 +85,46 @@ section{
     align-items: center;
     height: var(--height-f1);
     width: var(--width-W);
-    margin: 1rem 0 0 0;
-    background-color: var(--Faqua);
+    margin: 0.5rem 0 0 0;
+    border-top: 2px solid #5865f2;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.btn-hover:hover{
-    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.215);
-    transition: 500ms;
-    
-}
-
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
+/* buttons Layout -------------------------------------------------------------------*/
+.bton{
     padding: 0.7rem 1rem;
     border-radius: 30px;
 }
-a:hover{
-    color:#5865f2;
-    transition:500ms;
-   
-}
-header button{
-    background-color: inherit;
-    text-decoration: none;
-    border: none;
+.bton:hover{
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.215);
+    background-color:#5865f2;
+    color: #fff;
+    transition: 500ms;
     cursor: pointer;
-    font-size: 10px;
+    
+}
+/* buttons styling  -----------------------------------*/
+.white-btn{
+    color:black;
+    background-color: #fff;
 }
 
-/* typography-------------------------------------------- */
+.black-btn{
+    color:#fff;
+    background-color: #23272A;
+
+}
+
+.purple-btn{
+    color: black;
+    background-color: #5865f2;
+}
+
+/* typography--------------------------------------------------------------------- */
 h2{
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 main ,
@@ -157,7 +135,7 @@ p {
  
 }
 
-/* Header section -------------------------------------------------------------*/
+/* Header section --------------------------------------------------------------------*/
 
 header{
     color: #FFFFFE;
@@ -186,7 +164,6 @@ section.main-header{
     align-items: center;
     padding-top: 1.5rem;
    
-    
 }   
 
 .logo{
@@ -208,11 +185,11 @@ section.main-header{
 }
 
 .navbar .links{
-    
     text-align: center;
     width: 60%;
 
 }
+
 .login{
     line-height: 20px;
     width: 20%;
@@ -220,21 +197,9 @@ section.main-header{
     padding-right: 0.3rem;
     
 }
-.white-btn{
-    color:black;
-    background-color: #fff;
-}
 
-.black-btn{
-    color:#fff;
-    background-color: #23272A;
 
-}
-
-/* /HeaderNavbar Styling------------------------------------------------------------- */
-
-/* Main-Header Styling -------------------------------------------------------------- */
-
+/* Main-Header Styling---------------------------------------------------------------- */
 
 .box1{
     display: flex;
@@ -244,41 +209,91 @@ section.main-header{
     height: 100%;
 
 }
+
 .jumbo-text{
     text-align: center;
     margin-bottom: 2rem;
     line-height: 3vh;
     
 }
+
 .jumbo-text h1{
     font-weight: 700;
     margin-bottom: 5vh;
     font-size: 7vmin;
     line-height:4rem;
+
 }
+
 .jumbo-text p{
     display: inline-block;
     font-size: 15px;
     line-height: 18px;
     max-width: 700px;
     align-self: center;
+
 }
 
 .jumbo-btn a{
     margin: 1rem;
+
 }
 
+/* MAIN section layout------------------------------------------------------------------------- */
+.main-section1{
+    background-color: var(--Mgrey);
+    padding-bottom: 11%;
+    
+}
 
+.wrapper-main{
+    display: flex;
+    align-items: flex-start;
+    height: var(--height-M);
+    width: var(--width-W);
+    margin: 1rem auto;
+    
+}
+.wrapper-main1{
+    display: flex;
+    flex-direction: row-reverse;
+    height: var(--height-M);
+    width: var(--width-W);
+    margin: 1rem auto;
+   
+}
 
-/* MAIN styling ------------------------------------------------------------------------- */
+.wrapper-main2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: var(--height-M2);
+    width: var(--width-W);
+    margin: 1rem auto;
 
-/* first section with 3 rows */
+}
+
+/* MAIN section
+ Styling---------------------------------------------------- */
+
+/* wawes */
+.wawe{
+    margin: -3px;
+
+}
+.wawe-rotated{
+    transform: rotate(-180deg);
+    margin: -3px;
+
+}
+
+/* first 3 sections with 3 rows */
 .box2{
     text-align: center;
     width: 100%;
 
 }
-
 
 .box3{
     width: 55%;
@@ -289,24 +304,34 @@ section.main-header{
 /* second section with bigger row */
 .last-row-text{
     text-align: center;
-   
+
 }
 
-.box4{
-    margin-bottom: 1rem;
+.last-row-text img{
+    max-height: 350px;
+
 }
 
+.last-row-footer{
+    text-align: center;
 
-/* wawes */
-.wawe{
-    margin: -3px;
-}
-.wawe-rotated{
-    transform: rotate(-180deg);
-    margin: -3px;
 }
 
-/* Footer styling-------------------------------------------------------------------------- */
+.last-row-footer a{
+    display: inline-block;
+    margin-top: 2rem;
+    
+}
+
+/* Footer Layout-------------------------------------------------------------------------- */
+
+.footer-section{
+    background-color: var(--FGrey);
+    
+}
+/* Footer 
+styling--------------------------------------------------- */
+
 /* footer section 1 styling */
 .box5{
     width: 30%;
@@ -321,31 +346,20 @@ section.main-header{
     border: 1px dashed white;
 }
 
-footer hr{
-    border: none;
-    height: 1px;
-    background-color: #E8E8E8;
-    
-}
-
 /* footer section 2 */
-.wrapper-footer2 button{
-    border:var(--border);
-    background-color: #FFB6C1;
-    padding: 0.2rem;
-    min-width: 60px;
-    cursor: pointer;
-}
 
 
 
 
 
-/*CSS-Responsive-------------------------------------------------------------------- */
+
+
+/*Responsive-CSS-------------------------------------------------------------------- */
 
 @media (min-width: 1500px) and (max-width: 3000px){
     .jumbo-text h1{
         font-size: 4vmax;
+
     }
 
    
@@ -353,16 +367,19 @@ footer hr{
 @media (min-width: 1500px) and (max-width: 1900px){
     section.main-header{
         min-height: 40vh;
+
     }
 }
 
 @media only screen and (max-width: 1500px){
     :root{
         --width-W:85%;
+
     }
     
     section.main-header{
         background-size: cover;
+
     }
 
      /* readability of paragraph */
@@ -372,6 +389,7 @@ footer hr{
         background-image: linear-gradient(360deg, rgba(0,0,0,0.1),rgba(0,0,0,0.0));
         border-radius: 25px;
         padding: 1vh;
+
     }
 
 }
@@ -385,6 +403,7 @@ footer hr{
 
     .wrapper-main {
         align-items: center;
+
     }
     
 }
@@ -412,15 +431,13 @@ footer hr{
         background-size: cover;
     }
     
-
-   
-
 }
 
 @media only screen and (max-width: 550px){
     .jumbo-btn a{
         display: block;
         margin-bottom: 3rem;
+
     }
     .jumbo-btn{
         padding-top:5rem ;
