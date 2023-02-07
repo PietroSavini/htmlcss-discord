@@ -7,6 +7,7 @@
 
 img{
     max-width: 100%;
+    max-height: 100%;
 }
 
 /* COMMON ------------------------------------------------------------------- */
@@ -140,6 +141,12 @@ header button{
     cursor: pointer;
     font-size: 10px;
 }
+
+/* typography-------------------------------------------- */
+h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
 /* Header section -------------------------------------------------------------*/
 
 header{
@@ -258,16 +265,16 @@ section.main-header{
 
 /* first section with 3 rows */
 .box2{
-    background-color: var(--Mblue);
+   text-align: center;
     width: 100%;
-    /* debug */
-    border: var(--border);
+}
+
+main p{
+    font-size: 1rem;
+ 
 }
 .box3{
-    background-color: var(--Mpink);
     width: 55%;
-    /* debug */
-    border: var(--border);
 }
 
 /* second section with bigger row */
