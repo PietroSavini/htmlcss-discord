@@ -33,7 +33,7 @@ img{
 
     /*  Wrappers heights */
     --height-HM: 220px;
-    --height-M: 250px;
+    --height-M: 500px;
     --height-M2: 400px;
     --height-F: 280px;
     --height-f1:50px;
@@ -75,6 +75,7 @@ section{
 }
 .wrapper-main{
     display: flex;
+    align-items: flex-start;
     height: var(--height-M);
     width: var(--width-W);
     margin: 1rem auto;
@@ -265,16 +266,19 @@ section.main-header{
 
 /* first section with 3 rows */
 .box2{
-   text-align: center;
+    text-align: center;
     width: 100%;
+    
 }
 
 main p{
     font-size: 1rem;
+    line-height: 1.5rem;
  
 }
 .box3{
     width: 55%;
+    padding-top: 2.2rem;
 }
 
 /* second section with bigger row */
@@ -284,6 +288,15 @@ main p{
     background-color: var(--Mgreen);
     /* debug */
     border: var(--border);
+}
+
+/* wawes */
+.wawe{
+    margin: -3px;
+}
+.wawe-rotated{
+    transform: rotate(-180deg);
+    margin: -3px;
 }
 
 /* Footer styling-------------------------------------------------------------------------- */
