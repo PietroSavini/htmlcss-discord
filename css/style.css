@@ -34,7 +34,7 @@ img{
     /*  Wrappers heights */
     --height-HM: 220px;
     --height-M: 500px;
-    --height-M2: 400px;
+    --height-M2: 1000px;
     --height-F: 280px;
     --height-f1:50px;
 
@@ -146,8 +146,9 @@ header button{
 /* typography-------------------------------------------- */
 h2{
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
+
 /* Header section -------------------------------------------------------------*/
 
 header{
@@ -269,16 +270,17 @@ section.main-header{
     text-align: center;
     width: 100%;
     
+    
 }
 
 main p{
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 2em;
  
 }
 .box3{
     width: 55%;
-    padding-top: 2.2rem;
+    padding-top: 1.5rem;
 }
 
 /* second section with bigger row */
@@ -339,6 +341,11 @@ footer hr{
     :root{
         --width-W:85%;
     }
+    
+    section.main-header{
+        background-size: cover;
+    }
+
 
 }
 @media only screen and (max-width: 980px){
@@ -350,6 +357,21 @@ footer hr{
     }
     
 
+}
+
+@media only screen and (max-width: 800px){
+    section.main-header{
+        min-height: 40vh;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .box3 p{
+        font-size: 0.8rem;
+    }
 }
 
 @media only screen and (max-width: 700px){
@@ -370,5 +392,15 @@ footer hr{
 
 }
 
+@media only screen and (max-width: 550px){
+    .jumbo-btn a{
+        display: block;
+        margin-bottom: 3rem;
+    }
+    .jumbo-btn{
+        padding-top:5rem ;
+       
+    }
 
+}
 
