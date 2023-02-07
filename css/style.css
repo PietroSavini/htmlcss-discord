@@ -143,7 +143,7 @@ header{
 section.main-header{
     background-image: url(../img/jumbo.png);
     background-size: 100% 100%;
-    height: 60vh;
+    min-height: 60vh;
 
 }
 
@@ -218,14 +218,14 @@ section.main-header{
 .jumbo-text h1{
     font-weight: 700;
     margin-bottom: 5vh;
-    font-size: 5vh;
+    font-size: 7vmin;
     min-width: 100%;
-    line-height:3rem ;
+    line-height:4rem;
 }
 .jumbo-text p{
     display: inline-block;
-    font-size: 18px;
-    line-height: 2vh;
+    font-size: 15px;
+    line-height: 18px;
     max-width: 700px;
     align-self: center;
 }
@@ -286,7 +286,12 @@ footer hr{
     min-width: 60px;
     cursor: pointer;
 }
- 
+@media only screen and (max-width: 1500px){
+    :root{
+        --width-W:85%;
+    }
+
+}
 @media only screen and (max-width: 700px){
     
     section.main-header{
@@ -295,8 +300,7 @@ footer hr{
      /* readability of paragraph */
     
     .jumbo-text p{
-        text-shadow: 0px 0px 6px  black;
-        line-height: 3vh;
+        text-shadow: 0px 0px 6px  black;      
         background-image: linear-gradient(360deg, rgba(0,0,0,0.1),rgba(0,0,0,0.0));
         border-radius: 25px;
         padding: 1vh;
