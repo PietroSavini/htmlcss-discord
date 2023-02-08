@@ -126,11 +126,11 @@ h2{
     font-size: 2rem;
     margin-bottom: 2rem;
 }
-
+p{
+    font-size: 1.5rem;
+}
 main ,
-.last-row-text 
-p {
-    font-size: 1rem;
+.last-row-text p {
     line-height: 2em;
  
 }
@@ -227,10 +227,10 @@ section.main-header{
 
 .jumbo-text p{
     display: inline-block;
-    font-size: 15px;
     line-height: 18px;
     max-width: 700px;
     align-self: center;
+    line-height: 1.5rem;
 
 }
 
@@ -242,7 +242,7 @@ section.main-header{
 /* MAIN section layout------------------------------------------------------------------------- */
 .main-section1{
     background-color: var(--Mgrey);
-    padding-bottom: 11%;
+    
     
 }
 
@@ -272,6 +272,10 @@ section.main-header{
     width: var(--width-W);
     margin: 1rem auto;
 
+}
+
+.mb-1{
+    padding-bottom: 10%;
 }
 
 /* MAIN section
@@ -417,12 +421,12 @@ styling--------------------------------------------------- */
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
-
-    .box3,
-    .last-row-text
-    p{
-        font-size: 0.8rem;
+    
+    .main-section1 p,
+    .main-section p {
+        font-size: 1rem;
     }
+   
 }
 
 @media only screen and (max-width: 700px){
